@@ -15,6 +15,12 @@
 		9829C1C8259886C1000A893E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9829C1C6259886C1000A893E /* LaunchScreen.storyboard */; };
 		9829C1D3259886C1000A893E /* CardStackDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9829C1D2259886C1000A893E /* CardStackDemoTests.swift */; };
 		9829C1DE259886C1000A893E /* CardStackDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9829C1DD259886C1000A893E /* CardStackDemoUITests.swift */; };
+		9829C1F725988CFB000A893E /* CardStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9829C1F625988CFB000A893E /* CardStack.framework */; };
+		9829C1F825988CFB000A893E /* CardStack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9829C1F625988CFB000A893E /* CardStack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9829C2092598971C000A893E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9829C2082598971C000A893E /* FirstViewController.swift */; };
+		9829C20F2598972C000A893E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9829C20E2598972C000A893E /* SecondViewController.swift */; };
+		9829C21325989738000A893E /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9829C21225989738000A893E /* ThirdViewController.swift */; };
+		9829C21725989744000A893E /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9829C21625989744000A893E /* FourthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9829C1F925988CFB000A893E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9829C1F825988CFB000A893E /* CardStack.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		9829C1B8259886C0000A893E /* CardStackDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardStackDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9829C1BB259886C0000A893E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +69,11 @@
 		9829C1D9259886C1000A893E /* CardStackDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardStackDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9829C1DD259886C1000A893E /* CardStackDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStackDemoUITests.swift; sourceTree = "<group>"; };
 		9829C1DF259886C1000A893E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9829C1F625988CFB000A893E /* CardStack.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CardStack.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9829C2082598971C000A893E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		9829C20E2598972C000A893E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		9829C21225989738000A893E /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		9829C21625989744000A893E /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9829C1F725988CFB000A893E /* CardStack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +109,7 @@
 				9829C1D1259886C1000A893E /* CardStackDemoTests */,
 				9829C1DC259886C1000A893E /* CardStackDemoUITests */,
 				9829C1B9259886C0000A893E /* Products */,
+				9829C1F525988CFB000A893E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +126,14 @@
 		9829C1BA259886C0000A893E /* CardStackDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9829C1C6259886C1000A893E /* LaunchScreen.storyboard */,
+				9829C1C1259886C0000A893E /* Main.storyboard */,
+				9829C1C9259886C1000A893E /* Info.plist */,
+				9829C1C4259886C1000A893E /* Assets.xcassets */,
 				9829C1BB259886C0000A893E /* AppDelegate.swift */,
 				9829C1BD259886C0000A893E /* SceneDelegate.swift */,
 				9829C1BF259886C0000A893E /* ViewController.swift */,
-				9829C1C1259886C0000A893E /* Main.storyboard */,
-				9829C1C4259886C1000A893E /* Assets.xcassets */,
-				9829C1C6259886C1000A893E /* LaunchScreen.storyboard */,
-				9829C1C9259886C1000A893E /* Info.plist */,
+				9829C207259896F9000A893E /* ChildViewControllers */,
 			);
 			path = CardStackDemo;
 			sourceTree = "<group>";
@@ -128,6 +156,25 @@
 			path = CardStackDemoUITests;
 			sourceTree = "<group>";
 		};
+		9829C1F525988CFB000A893E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9829C1F625988CFB000A893E /* CardStack.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9829C207259896F9000A893E /* ChildViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9829C2082598971C000A893E /* FirstViewController.swift */,
+				9829C20E2598972C000A893E /* SecondViewController.swift */,
+				9829C21225989738000A893E /* ThirdViewController.swift */,
+				9829C21625989744000A893E /* FourthViewController.swift */,
+			);
+			path = ChildViewControllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +185,7 @@
 				9829C1B4259886C0000A893E /* Sources */,
 				9829C1B5259886C0000A893E /* Frameworks */,
 				9829C1B6259886C0000A893E /* Resources */,
+				9829C1F925988CFB000A893E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,6 +309,10 @@
 				9829C1C0259886C0000A893E /* ViewController.swift in Sources */,
 				9829C1BC259886C0000A893E /* AppDelegate.swift in Sources */,
 				9829C1BE259886C0000A893E /* SceneDelegate.swift in Sources */,
+				9829C21725989744000A893E /* FourthViewController.swift in Sources */,
+				9829C20F2598972C000A893E /* SecondViewController.swift in Sources */,
+				9829C21325989738000A893E /* ThirdViewController.swift in Sources */,
+				9829C2092598971C000A893E /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
